@@ -1,0 +1,41 @@
+{
+    "name": "att-formatjson",
+    "version": "0.0.1",
+	"description": "format json file",
+    "keywords": ["att plugin", "formatjson"],
+    "main": "lib/formatjson.js",
+    "engines": {
+        "node" : ">=0.8.0"
+    },
+	"author": "colorhook <colorhook@gmail.com>",
+	"maintainers": [{
+      "name": "colorhook",
+      "email": "colorhook@gmail.com",
+      "url": "http://colorhook.com"
+    }],
+	"bugs": {
+        "email": "colorhook@gmail.com",
+        "url": "http://github.com/colorhook/att-formatjson/issues"
+    },
+    "dependencies": {
+    },
+    "devDependencies":{
+        "mocha": "~1.7.4",
+	    "should": "~1.2.1",
+        "fileutil": "~1.0.0"
+    },
+    "scripts":{
+        "test": "mocha --require should test"
+    },
+    "homepage": "https://github.com/colorhook/att-formatjson",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/colorhook/att-formatjson.git"
+    },
+	"licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/colorhook/att/blob/master/LICENSE"
+        }
+    ]
+}
