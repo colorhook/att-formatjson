@@ -22,5 +22,7 @@ att formatjson **/*.json --indent 4
 
 timeline
 ----------------
+### 0.0.3 (2013-03-11) 在package.json中声明att.command字段
+### 0.0.2 (2013-01-07) 修正-o参数无效的bug
 ### 0.0.1 (2012-12-30)
 
