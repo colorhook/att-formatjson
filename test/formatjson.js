@@ -17,7 +17,6 @@ describe('formatjson is a att plugin', function(){
 
     var plugin = new formatjson(att);
 
-    plugin.name.should.equal('formatjson');
     plugin.execute.should.be.a('function');
     plugin.formatJSON.should.be.a('function');
 
