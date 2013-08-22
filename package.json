@@ -1,8 +1,7 @@
 {
     "name": "att-formatjson",
-    "version": "0.0.3",
+    "version": "0.0.4",
 	"description": "format json file",
-    "att.command": "formatjson",
     "keywords": ["att plugin", "formatjson"],
     "main": "lib/formatjson.js",
     "engines": {

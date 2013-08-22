@@ -5,17 +5,22 @@ var fileutil = require('fileutil');
 describe('formatjson is a att plugin', function(){
     
   var att = {
-        find: function(argv, iterator, callback, options){
-            iterator();
-            callback();
-        },
-        fileutil: fileutil
+    file: fileutil,
+    temp: {},
+    register: function(name, prompt, impl){
+        this.temp[name] = impl;
+    },
+    load: function(name){
+        var func = this.temp[name];
+        return new func;
     }
+  }
 
   it('formatjson is function, and instance has execute function', function(done){
     formatjson.should.be.a('function');
 
-    var plugin = new formatjson(att);
+    new formatjson(att);
+    var plugin = att.load('formatjson');
 
     plugin.execute.should.be.a('function');
     plugin.formatJSON.should.be.a('function');
